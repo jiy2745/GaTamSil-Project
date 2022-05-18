@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CPU.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Black+Han+Sans&family=Do+Hyeon&family=Francois+One&family=Jua&family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+        <title>Laboratory 13 : CPU</title>
+    </head>
+    <body>
+        <div>
+            <p class = "text b center" id = "title">CPU</p>
+            <div class="center">
+                <img class = "image" id = "img1" src="image/cpu.png">
+            </div>
+            <br>
+            <p class = "text c center" id = "mainText"> CPU는 중앙처리장치로 기억, 해석, 연산, 제어의 기능을 수행합니다.<br><br><br><br><br><br>Scroll down<br>v</p>
+            
+        </div>
+        
+
+        <div class = "text1 image2" id="tran">
+            <img src="image/tran.png">
+        </div>
+        
+        <p class = "text1 c center" id = "ani1">cpu는 트랜지스터라고 하는 반도체로 만들어져 있습니다.<br><br>cpu에 대해 알아보기 위해 트랜지스터와 트랜지스터의 과학적 원리에 대해 알아봅시다.</p>
+        
+        <div class = "text1 image3" id="Si">
+            <img src="image/si.png" class="rotate360">
+            <img src="image/si2.png">
+        </div>
+
+        <p class = "text1 c center" id = "ani2">반도체는 대부분 실리콘으로 만들어집니다.<br><br>실리콘은 4개의 최외각전자를 가지고 있으며, 다른 실리콘들과 공유결합을 합니다.</p>
+
+        <div class = "text1 image2" id="sishare">
+            <img src="image/siShare.png">
+        </div>
+
+        <p class = "text1 c center" id = "ani3">공유결합을 하여 안정한 상태를 유지하기 때문에, 전자가 이동할 수 없습니다.<br><br>그러나, 실리콘보다 전자가 한 개씩 많거나 적다면 이야기가 달라집니다.</p>
+        
+        <div class = "text1 image5" id="typeN">
+            <img src="image/typeN.png">
+            <img src="image/dot.png" id = 'dot'>
+        </div> 
+        
+        <div class = "text1 image2" id="typeP">
+            <img src="image/typeP.png">
+            
+        </div> 
+
+        <p class = "text1 c center" id = "ani4">B(붕소)와 같은 전자가 하나 적은 원자를 넣는다면, 빈 공간이 생깁니다. 이 빈 공간을 마치 양전하처럼 행동하는 구멍이라고 하여 양공이라고 부릅니다. <br><br>이를 통하여 전기를 흐르게 할 수 있습니다.<br><br>또한 P(인), As(비소)와 같이 전자가 하나 많은 원자를 넣는다면, 이 전자는 자유롭게 이동하며, 전기를 흐르게 할 수 있습니다.</p>
+
+        <div class = "text1 image4" id="merge1">
+            <img src="image/mergeN.png" id = "n">
+            <img src="image/mergeP.png" id = "p">
+        </div> 
+
+        <p class = "text1 c center" id = "ani5">전자가 하나 적은 원자를 넣은 반도체를 p(positive)형 반도체,<br><br>전자가 하나 많은 원자를 넣은 반도체를 n(negative)형 반도체라고 합니다.</p>
+
+        <div class = "text1 image4" id="merge2">
+            <img src="image/mergeN.png">
+            <img src="image/mergeP.png">
+        </div> 
+
+        <p class = "text1 c center" id = "ani6">이 두 반도체를 서로 붙여보겠습니다.</p>
+
+        <div class = "text1 image4" id="merge3">
+            <img src="image/mergeN.png">
+            <img src="image/mergeP.png">
+            <img src="image/mergeElectron.png">
+            <img src="image/mergeElectronHole.png">
+        </div> 
+
+        <p class = "text1 c center" id = "ani7"> 붙인다면 접합면에서 전자의 이동이 일어나는데요, <br><br>n형 반도체의 남은 전자들이 p형 반도체의 양공으로 이동하게 됩니다.</p>
+
+        <div class = "text1 image4" id="merge4">
+            <img src="image/mergeN.png">
+            <img src="image/mergeP.png">
+            <img src="image/mergeBarrier.png">
+        </div> 
+
+        <p class = "text1 c center" id = "ani8">이렇게 되면 접합면의 오른쪽은 -전하를 띄게 되고,<br><br> 왼쪽은 +전하를 띄게 되어 전자, 양공이 서로 이동하지 못하는 영역이 생겨 전기가 흐르지 않습니다. </p>
+        <p class = "text1 c center" id = "ani9">이 영역을 공핍영역이라고 합니다. </p>
+
+        <div class = "text1 image2" id = "pnp">
+            <img src="image/pnp.png">  
+        </div>
+
+        <p class = "text1 c center" id = "ani10">그럼 이 p형 반도체와 n형 반도체를 3개를 pnp로 연결해보겠습니다.<br><br>p와 n 그리고 n과 p 사이에 전기가 흐르지 않는 공핍 영역이 생깁니다.</p>
+        
+        <div class = "text1 image2" id = "circuit">
+        </div>
+
+        <p class = "text1 c center" id = "ani11">그래서 양쪽의 p에 전지를 연결해도 전류가 흐르지 않죠.</p>
+        <p class = "text1 c center" id = "ani12">이때 흐르지 않는 전류를 흐르게 만들어주는게 2차 전지입니다.<br><br>2차전지는 한쪽의 p와 n에 연결하여 공핍영역을 변화시킵니다.</p>
+        <p class = "text1 c center" id = "ani13">이때 공핍영역이 변화되면서 전지와 양쪽 p에서 전자가 이동할 수 있게되어 전류가 흐릅니다.</p>
+        <p class = "text1 c center" id = "ani14">전지 2개를 사용하는 것이 단순히 세기를 높여서 전류를 흐르게 하는것이 아니라,<br><br> 하나의 전지는 전선을 연결하거나 끊게 하는 역할을, 다른 하나의 전지는 그 연결된 전선에서 전류가 흐르게 하는 역할을 합니다.</p>
+        <p class = "text1 c center" id = "ani15">이게 중요한 이유는 전지 2개가 연결되어야 전류가 흐르기 때문에<br><br>물리적인 영향을 주지 않아도 전류의 공급을 조절하는 것 만으로도 전류가 흐르거나 흐르지 않게 할 수 있기 때문입니다.</p>
+
+        <div class = "text1 image2" id = "andor">
+            <img src="image/and.png">
+            <img src="image/or.png">
+            <img src="image/not.png">   
+        </div>
+
+        <p class = "text1 c center" id = "ani16">이렇게 각각의 트랜지스터가 여러개로 연결되면 논리적 계산을 할수있게됩니다.<br><br> 이때 트랜지스터의 연결에서 AND, OR, NOT 등의 게이트로 논리적 계산을 합니다.</p>
+        <p class = "text1 c center" id = "ani17">AND게이트는 2개의 전원에서 전기가 흘러야 전류가 흐르는 것이고, <br><br> OR 게이트는 2개의 전원중 1개의 전원 이상에서 전기가 흐르면 전류가 흐르는 것입니다.<br><br> NOT게이트는 전류가 흐르면 흐르지 않게 흐르지 않으면 흐르게 바꾸어주는 게이트입니다.</p>
+
+        <div class = "text1 image2" id = "gate">
+
+            <input type ="checkbox" id = "ck1" onclick="vars()">
+            <br>
+            <img src="image/and.png" id = "and" class = "and">
+            <br>
+            <input type ="checkbox" id = "ck2" onclick="vars()">
+
+            <br>
+            <img src="image/and.png" id = "final" class = "final">
+            <br>
+
+            <input type ="checkbox" id = "ck3" onclick="vars()">
+            <br>
+            <img src="image/or.png" id = "or" class = "and">
+            <br>
+            <input type ="checkbox" id = "ck4" onclick="vars()">
+
+        </div>
+
+        <p class = "text1 c center" id = "ani18">이 세개의 and or not 게이트를 직렬, 병렬로 연결하면 XOR, NAND, NOR, XNOR 등의 게이트를 만들어 낼 수 있습니다.</p>
+
+
+        <p class = "text1 c center" id = "ani19">이러한 게이트들이 덧셈, 뺄셈 등의 기초적인 연산을 수행하고, 수없이 많은 게이트들이 모여 CPU를 이룹니다.<br>▿<br>▿</p>
+        <p class = "text1 largeText center" id = "ani20">지금까지 CPU를 구성하는 트렌지스터의 원리와<br>트렌지스터로 이루어진 논리 게이트에 대해 알아보았습니다.<br> 끝까지 읽어주셔서 감사합니다</p>
+        <script src = "CPU.js"></script>
+        
+    </body>
+</html>
